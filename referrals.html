@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Make a Referral | Mwanga Mental Health Assessment Hub</title>
+  <meta name="description" content="Submit a referral for an independent mental health assessment. We aim to respond within one working day." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="crisis" role="note" aria-label="Crisis information">
+    <div class="container">
+      <strong>Not a crisis service.</strong>
+      <span> If you are in immediate danger, call </span><a href="tel:999">999</a><span>. For mental health crisis support, call </span><a href="tel:116123">116 123</a><span> (Samaritans).</span>
+    </div>
+  </div>
+
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Mwanga home">
+        <div class="brand__mark" aria-hidden="true">M</div>
+        <div>
+          <div class="brand__name">Mwanga</div>
+          <div class="brand__tag">Mental Health Assessment Hub</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="referrals.html" aria-current="page">Referrals</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn--primary" href="referrals.html">Make a Referral</a>
+      </nav>
+
+      <button class="menu-btn" type="button" data-menu-btn aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4zM4 11h16v2H4zM4 16h16v2H4z"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile" data-mobile-nav>
+      <div class="container">
+        <div class="stack" role="navigation" aria-label="Mobile navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="referrals.html" aria-current="page">Referrals</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn btn--primary" href="referrals.html">Make a Referral</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section section--secondary pagehead">
+      <div class="container center">
+        <h1>Make a Referral</h1>
+        <p>Submit a referral for an independent mental health assessment. We aim to respond within one working day.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container" style="max-width:760px">
+        <div class="steps" aria-label="Referral steps">
+          <div class="step"><div class="step__num">1</div><div class="step__title">Referral Info</div><div class="step__desc">Your details and patient information</div></div>
+          <div class="step"><div class="step__num">2</div><div class="step__title">Consent &amp; Basis</div><div class="step__desc">Confirm consent or lawful basis</div></div>
+          <div class="step"><div class="step__num">3</div><div class="step__title">Submit</div><div class="step__desc">Review and send your referral</div></div>
+          <div class="step"><div class="step__num">4</div><div class="step__title">Response</div><div class="step__desc">We respond within 1 working day</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container" style="max-width:760px">
+        <h2 style="margin:0">Referral Form</h2>
+
+        <form class="form" data-mailto-form data-mailto-to="info@mwanga.co.uk" data-mailto-subject="Referral" style="margin-top:18px">
+          <!-- Section 1 -->
+          <div class="card">
+            <h3 style="margin:0;color:var(--primary)">1) Your Details (Referrer)</h3>
+            <div class="grid grid--2" style="margin-top:14px">
+              <div class="field">
+                <label for="fullName">Full Name <span class="req">*</span></label>
+                <input id="fullName" name="fullName" type="text" required data-mailto data-mailto-label="Name" />
+              </div>
+              <div class="field">
+                <label for="organisation">Organisation <span class="req">*</span></label>
+                <input id="organisation" name="organisation" type="text" required data-mailto data-mailto-label="Organisation" />
+              </div>
+              <div class="field">
+                <label for="role">Role <span class="req">*</span></label>
+                <input id="role" name="role" type="text" required data-mailto data-mailto-label="Role" />
+              </div>
+              <div class="field">
+                <label for="email">Email <span class="req">*</span></label>
+                <input id="email" name="email" type="email" required data-mailto data-mailto-label="Email" />
+              </div>
+              <div class="field">
+                <label for="phone">Phone Number <span class="req">*</span></label>
+                <input id="phone" name="phone" type="tel" required data-mailto data-mailto-label="Phone" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="card">
+            <h3 style="margin:0;color:var(--primary)">2) Patient Details</h3>
+            <div class="grid grid--2" style="margin-top:14px">
+              <div class="field">
+                <label for="patientName">Patient Full Name <span class="req">*</span></label>
+                <input id="patientName" name="patientName" type="text" required data-mailto data-mailto-label="Patient Name" />
+              </div>
+              <div class="field">
+                <label for="dob">Date of Birth <span class="req">*</span></label>
+                <input id="dob" name="dob" type="date" required data-mailto data-mailto-label="Date of Birth" />
+              </div>
+              <div class="field">
+                <label for="nhsNumber">NHS Number (if known) <span class="muted" style="font-weight:600">Optional</span></label>
+                <input id="nhsNumber" name="nhsNumber" type="text" data-mailto data-mailto-label="NHS Number" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="card">
+            <h3 style="margin:0;color:var(--primary)">3) Assessment Details</h3>
+            <div class="grid grid--2" style="margin-top:14px">
+              <div class="field">
+                <label for="assessmentType">Assessment Type <span class="req">*</span></label>
+                <select id="assessmentType" name="assessmentType" required data-mailto data-mailto-label="Assessment Type">
+                  <option value="">Select type</option>
+                  <option>Mental Capacity Assessment</option>
+                  <option>Best Interests Assessment</option>
+                  <option>Mental Health Assessment</option>
+                  <option>Risk Assessment</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="urgency">Urgency</label>
+                <select id="urgency" name="urgency" data-mailto data-mailto-label="Urgency">
+                  <option value="">Select urgency</option>
+                  <option>Routine</option>
+                  <option>Urgent</option>
+                  <option>Emergency</option>
+                </select>
+              </div>
+              <div class="field" style="grid-column:1 / -1">
+                <label for="reason">Reason for Referral <span class="req">*</span></label>
+                <div class="help">Include the specific decision to be assessed and any relevant history.</div>
+                <textarea id="reason" name="reason" rows="4" required data-mailto data-mailto-label="Reason"></textarea>
+              </div>
+              <div class="field" style="grid-column:1 / -1">
+                <label for="additionalInfo">Additional Information</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="3" data-mailto data-mailto-label="Additional Info"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4 -->
+          <div class="card">
+            <h3 style="margin:0;color:var(--primary)">4) Consent &amp; Confirmation</h3>
+            <div style="margin-top:14px;display:flex;flex-direction:column;gap:12px">
+              <label class="checkbox">
+                <input type="checkbox" name="consentConfirmed" required data-mailto data-mailto-label="Consent confirmed" />
+                <span>I confirm that consent has been obtained from the individual (or there is a lawful basis for this referral under the Mental Capacity Act 2005 or other applicable legislation). <span class="req">*</span></span>
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="dataProtection" required data-mailto data-mailto-label="Data protection agreed" />
+                <span>I agree that the information provided will be processed in accordance with data protection legislation and Mwanga's privacy policy. <span class="req">*</span></span>
+              </label>
+            </div>
+          </div>
+
+          <button class="btn btn--primary" type="submit" style="width:100%">Submit Referral</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div style="display:flex;align-items:center;gap:10px">
+            <div class="brand__mark" style="width:32px;height:32px;border-radius:10px">M</div>
+            <div style="font-weight:900;font-size:18px">Mwanga</div>
+          </div>
+          <p>Independent, RMN-led mental health assessments. Supporting commissioners, solicitors, and care providers across the UK.</p>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="services.html#capacity">Capacity Assessments</a></li>
+            <li><a href="services.html#best-interests">Best Interests</a></li>
+            <li><a href="services.html#risk">Risk Assessments</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="referrals.html">Make a Referral</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:07423253348">07423 253348</a></li>
+            <li><a href="mailto:info@mwanga.co.uk">info@mwanga.co.uk</a></li>
+            <li><span style="opacity:.75">London, United Kingdom</span></li>
+            <li>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/Mwanga-Mental-Health-Assessment-Hub-Blackpool/61588089440884/?mibextid=wwXIfr&rdid=ek3K7pGIb8u2QrM5&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C7jdo4sgL%2F%3Fmibextid%3DwwXIfr">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div>© 2026 Mwanga Mental Health Assessment Hub. All rights reserved.</div>
+        <small>Not a crisis service. If you are in immediate danger, call 999. For mental health crisis support, call 116 123 (Samaritans).</small>
+      </div>
+    </div>
+  </footer>
+
+  <div class="bottom-bar" aria-label="Mobile quick actions">
+    <a href="referrals.html" aria-label="Refer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l3 3v17H6V2zm9 1v3h3M8 11h8v2H8v-2zm0 4h8v2H8v-2z"/></svg>
+      Refer
+    </a>
+    <a href="tel:07423253348" aria-label="Call">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.2 1 .4 2 .6 3.1.6.7 0 1.3.6 1.3 1.3V21c0 .7-.6 1.3-1.3 1.3C10.1 22.3 1.7 13.9 1.7 3.3 1.7 2.6 2.3 2 3 2h3.6c.7 0 1.3.6 1.3 1.3 0 1.1.2 2.1.6 3.1.1.4 0 .9-.2 1.2l-2.7 3.2z"/></svg>
+      Call
+    </a>
+  </div>
+
+  <button class="to-top" type="button" data-to-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V20h-2V8.8L6.4 13.4 5 12l7-7z"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
