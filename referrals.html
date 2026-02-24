@@ -6,6 +6,11 @@
   <title>Make a Referral | Mwanga Mental Health Assessment Hub</title>
   <meta name="description" content="Submit a referral for an independent mental health assessment. We aim to respond within one working day." />
   <link rel="stylesheet" href="css/styles.css" />
+
+ </script>
+  <link rel="stylesheet" href="css/styles.css" />
+<link rel="icon" type="image/png" href="assets/favicon2.png">
+
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -76,18 +81,18 @@
       <div class="container" style="max-width:760px">
         <h2 style="margin:0">Referral Form</h2>
 
-        <form class="form" data-mailto-form data-mailto-to="mwanga2026ass@gmail.com" data-mailto-subject="Referral" style="margin-top:18px">
+        <form class="form" action="https://formspree.io/f/xqedwbll" method="POST" style="margin-top:18px">
           <!-- Section 1 -->
           <div class="card">
             <h3 style="margin:0;color:var(--primary)">1) Your Details (Referrer)</h3>
             <div class="grid grid--2" style="margin-top:14px">
               <div class="field">
                 <label for="fullName">Full Name <span class="req">*</span></label>
-                <input id="fullName" name="fullName" type="text" required data-mailto data-mailto-label="Name" />
+                <input id="fullName" name="fullName" type="text" required />
               </div>
               <div class="field">
                 <label for="organisation">Organisation <span class="req">*</span></label>
-                <input id="organisation" name="organisation" type="text" required data-mailto data-mailto-label="Organisation" />
+                <input id="organisation" name="organisation" type="text" required />
               </div>
               <div class="field">
                 <label for="role">Role <span class="req">*</span></label>
@@ -129,7 +134,7 @@
             <div class="grid grid--2" style="margin-top:14px">
               <div class="field">
                 <label for="assessmentType">Assessment Type <span class="req">*</span></label>
-                <select id="assessmentType" name="assessmentType" required data-mailto data-mailto-label="Assessment Type">
+                <select id="assessmentType" name="assessmentType" required>
                   <option value="">Select type</option>
                   <option>Mental Capacity Assessment</option>
                   <option>Best Interests Assessment</option>
@@ -149,7 +154,7 @@
               <div class="field" style="grid-column:1 / -1">
                 <label for="reason">Reason for Referral <span class="req">*</span></label>
                 <div class="help">Include the specific decision to be assessed and any relevant history.</div>
-                <textarea id="reason" name="reason" rows="4" required data-mailto data-mailto-label="Reason"></textarea>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
               </div>
               <div class="field" style="grid-column:1 / -1">
                 <label for="additionalInfo">Additional Information</label>
@@ -163,7 +168,7 @@
             <h3 style="margin:0;color:var(--primary)">4) Consent &amp; Confirmation</h3>
             <div style="margin-top:14px;display:flex;flex-direction:column;gap:12px">
               <label class="checkbox">
-                <input type="checkbox" name="consentConfirmed" required data-mailto data-mailto-label="Consent confirmed" />
+                <input type="checkbox" name="consentConfirmed" required />
                 <span>I confirm that consent has been obtained from the individual (or there is a lawful basis for this referral under the Mental Capacity Act 2005 or other applicable legislation). <span class="req">*</span></span>
               </label>
               <label class="checkbox">
@@ -172,6 +177,8 @@
               </label>
             </div>
           </div>
+            <input type="hidden" name="_subject" value="Mwanga website: New referral" />
+            <input type="hidden" name="formType" value="referral" />
 
           <button class="btn btn--primary" type="submit" style="width:100%">Submit Referral</button>
         </form>
@@ -212,7 +219,7 @@
           <h4>Contact</h4>
           <ul>
             <li><a href="tel:07423253348">07423 253348</a></li>
-            <li><a href="mailto:mwanga2026ass@gmail.com">mwanga2026ass@gmail.comk</a></li>
+            <li><a href="mailto:mwanga2026ass@gmail.com">mwanga2026ass@gmail.com</a></li>
             <li><span style="opacity:.75">12 Alexandra Road Blackpool England, FY16BU</span></li>
             <li>
               <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/Mwanga-Mental-Health-Assessment-Hub-Blackpool/61588089440884/?mibextid=wwXIfr&rdid=ek3K7pGIb8u2QrM5&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C7jdo4sgL%2F%3Fmibextid%3DwwXIfr">Facebook</a>

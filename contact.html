@@ -6,6 +6,11 @@
   <title>Contact Us | Mwanga Mental Health Assessment Hub</title>
   <meta name="description" content="Get in touch to discuss an assessment, ask a question, or make a referral." />
   <link rel="stylesheet" href="css/styles.css" />
+
+ </script>
+  <link rel="stylesheet" href="css/styles.css" />
+<link rel="icon" type="image/png" href="assets/favicon2.png">
+
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -67,27 +72,29 @@
 
           <div>
             <h2 style="margin:0">Send us a message</h2>
-            <form class="form" data-mailto-form data-mailto-to="mwanga2026ass@gmail.com" data-mailto-subject="Contact from website" style="margin-top:16px">
+             <form class="form" action="https://formspree.io/f/xdalyzkd" method="POST" style="margin-top:16px">
               <div class="field">
                 <label for="fullName">Full Name <span class="req">*</span></label>
-                <input id="fullName" name="fullName" type="text" required data-mailto data-mailto-label="Name" />
+                <input id="fullName" name="fullName" type="text" required />
               </div>
               <div class="field">
                 <label for="email">Email <span class="req">*</span></label>
-                <input id="email" name="email" type="email" required data-mailto data-mailto-label="Email" />
+               <input id="email" name="email" type="email" required />
               </div>
               <div class="field">
                 <label for="phone">Phone Number (Optional)</label>
-                <input id="phone" name="phone" type="tel" data-mailto data-mailto-label="Phone" />
+                <input id="phone" name="phone" type="tel" />
               </div>
               <div class="field">
                 <label for="message">Message <span class="req">*</span></label>
-                <textarea id="message" name="message" rows="5" required data-mailto data-mailto-label="Message"></textarea>
+                <input id="message" name="message" type="text" required />
               </div>
               <label class="checkbox">
-                <input type="checkbox" name="dataProtection" required data-mailto data-mailto-label="Data protection agreed" />
+                <input id="dataProtection" name="dataProtection" type="checkbox" required />
                 <span>I agree that my information will be processed in accordance with data protection legislation. <span class="req">*</span></span>
               </label>
+              <input type="hidden" name="_subject" value="Mwanga website: Contact enquiry" />
+                <input type="hidden" name="formType" value="contact" />
               <button class="btn btn--primary" type="submit" style="width:100%">Send Message</button>
             </form>
           </div>
