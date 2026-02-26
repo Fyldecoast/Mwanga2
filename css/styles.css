@@ -235,3 +235,102 @@ a{color:inherit}
   .nav { display: none; }
   .menu-btn { display: inline-flex; }
 }
+.no-scroll { overflow: hidden; }
+
+/* Regulate & Recover block (matches existing card/grid style) */
+.rr-head { display: grid; gap: 12px; }
+.rr-kicker{
+  display:inline-flex;
+  font-weight:900;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.02em;
+  padding:8px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background:rgba(0,0,0,.03);
+  width: fit-content;
+}
+.rr-alert{
+  margin-top: 4px;
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,.10);
+  background: rgba(0,0,0,.02);
+}
+.rr-divider{ height:1px; background:rgba(0,0,0,.08); margin:26px 0; }
+
+.rr-list{ margin:0; padding-left:18px; display:grid; gap:6px; }
+.rr-mini{ margin-top: 12px; }
+.rr-mini__title{ font-weight:900; margin-bottom:8px; }
+
+.rr-pills{ display:flex; flex-wrap:wrap; gap:8px; }
+.rr-pill{
+  display:inline-flex;
+  border:1px solid rgba(0,0,0,.08);
+  background:rgba(0,0,0,.02);
+  padding:8px 10px;
+  border-radius:999px;
+  font-weight:800;
+  font-size:13px;
+}
+
+.rr-outputs{
+  border:1px solid rgba(0,0,0,.08);
+  background:#fff;
+  border-radius:16px;
+  padding:14px;
+  margin-top: 14px;
+}
+.rr-outputs__title{ font-weight:900; margin-bottom:10px; }
+
+.rr-pricegrid{ align-items: stretch; }
+.rr-pricecard{ display:flex; flex-direction:column; gap: 6px; }
+.rr-pricecard__top{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:12px;
+}
+.rr-price{
+  font-weight:900;
+  font-size:18px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.08);
+  background:rgba(0,0,0,.02);
+  white-space:nowrap;
+}
+.rr-tag{ font-weight:700; opacity:.85; margin-top: 6px; }
+
+.rr-details{
+  border:1px solid rgba(0,0,0,.08);
+  background:#fff;
+  border-radius:16px;
+  padding:12px 14px;
+}
+.rr-details > summary{
+  cursor:pointer;
+  font-weight:900;
+  list-style:none;
+}
+.rr-details > summary::-webkit-details-marker{ display:none; }
+.rr-details__body{ margin-top:10px; opacity:.92; }
+.rr-details--wide{ padding:14px; }
+
+.rr-safe-path__title{ font-weight:900; }
+
+.rr-cta{
+  margin-top: 18px;
+  display:flex;
+  gap:14px;
+  justify-content:space-between;
+  align-items:center;
+  border:1px solid rgba(0,0,0,.08);
+  background:#fff;
+  border-radius:18px;
+  padding:14px;
+  flex-wrap:wrap;
+}
+.rr-cta__title{ font-weight:900; margin-bottom:4px; }
+.rr-cta__actions{ display:flex; gap:10px; flex-wrap:wrap; }
