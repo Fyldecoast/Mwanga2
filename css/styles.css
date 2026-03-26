@@ -733,3 +733,18 @@ a{color:inherit}
     text-align: center;
   }
 }
+
+/* Specifically hide the menu button on screens wider than 960px */
+@media (min-width: 961px) {
+  .menu-btn {
+    display: none !important;
+  }
+}
+
+@media (min-width: 961px) {
+  .menu-btn, 
+  .mobile, 
+  [data-mobile-nav] {
+    display: none !important;
+  }
+}
