@@ -12,6 +12,15 @@
   --radius:12px;
   --shadow: 0 10px 25px rgba(0,0,0,.06);
 }
+/*mobile navigation*/
+.mobile {
+  display: none;
+}
+
+.mobile.is-open {
+  display: block;
+}
+
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -228,109 +237,499 @@ a{color:inherit}
   .bottom-bar{display:none}
   .to-top{bottom:18px}
 }
-.mobile { display: none; }
-.mobile.is-open { display: block; }
+
+
+/* POSTER CSS */
+.launch-event-section {
+  padding: 4rem 1.25rem;
+  background: linear-gradient(180deg, #f7fafc 0%, #ffffff 100%);
+}
+
+.launch-event-card {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(11, 58, 110, 0.08);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 50px rgba(11, 58, 110, 0.08);
+}
+
+.launch-badge {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: #0b3a6e;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.launch-event-text h2 {
+  margin: 0 0 1rem;
+  color: #0b3a6e;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.15;
+}
+
+.launch-meta {
+  margin: 0.35rem 0;
+  font-weight: 600;
+  color: #234;
+}
+
+.launch-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.launch-event-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: #0b3a6e;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: #eef4f8;
+  color: #0b3a6e;
+}
 
 @media (max-width: 900px) {
-  .nav { display: none; }
-  .menu-btn { display: inline-flex; }
+  .launch-event-card {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+  }
 }
-.no-scroll { overflow: hidden; }
-
-/* Regulate & Recover block (matches existing card/grid style) */
-.rr-head { display: grid; gap: 12px; }
-.rr-kicker{
-  display:inline-flex;
-  font-weight:900;
-  font-size:12px;
-  text-transform:uppercase;
-  letter-spacing:.02em;
-  padding:8px 10px;
-  border-radius:999px;
-  border:1px solid rgba(0,0,0,.08);
-  background:rgba(0,0,0,.03);
-  width: fit-content;
-}
-.rr-alert{
-  margin-top: 4px;
-  padding: 14px;
-  border-radius: 16px;
-  border: 1px solid rgba(0,0,0,.10);
-  background: rgba(0,0,0,.02);
-}
-.rr-divider{ height:1px; background:rgba(0,0,0,.08); margin:26px 0; }
-
-.rr-list{ margin:0; padding-left:18px; display:grid; gap:6px; }
-.rr-mini{ margin-top: 12px; }
-.rr-mini__title{ font-weight:900; margin-bottom:8px; }
-
-.rr-pills{ display:flex; flex-wrap:wrap; gap:8px; }
-.rr-pill{
-  display:inline-flex;
-  border:1px solid rgba(0,0,0,.08);
-  background:rgba(0,0,0,.02);
-  padding:8px 10px;
-  border-radius:999px;
-  font-weight:800;
-  font-size:13px;
+/* POSTER HEADER CSS */
+.nav-ticket-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: #3e74b0;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 1rem;
 }
 
-.rr-outputs{
-  border:1px solid rgba(0,0,0,.08);
-  background:#fff;
-  border-radius:16px;
-  padding:14px;
-  margin-top: 14px;
+/*partnership navigation*/
+.investment-hero {
+  padding: 5rem 1.25rem 4rem;
+  background:
+    radial-gradient(circle at top left, rgba(46, 125, 50, 0.12), transparent 30%),
+    linear-gradient(135deg, #0b3a6e 0%, #123f76 55%, #1a4e8b 100%);
+  color: #fff;
 }
-.rr-outputs__title{ font-weight:900; margin-bottom:10px; }
 
-.rr-pricegrid{ align-items: stretch; }
-.rr-pricecard{ display:flex; flex-direction:column; gap: 6px; }
-.rr-pricecard__top{
-  display:flex;
-  align-items:baseline;
-  justify-content:space-between;
-  gap:12px;
+.investment-hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
 }
-.rr-price{
-  font-weight:900;
-  font-size:18px;
-  padding:6px 10px;
-  border-radius:999px;
-  border:1px solid rgba(0,0,0,.08);
-  background:rgba(0,0,0,.02);
-  white-space:nowrap;
-}
-.rr-tag{ font-weight:700; opacity:.85; margin-top: 6px; }
 
-.rr-details{
-  border:1px solid rgba(0,0,0,.08);
-  background:#fff;
-  border-radius:16px;
-  padding:12px 14px;
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.14);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
-.rr-details > summary{
-  cursor:pointer;
-  font-weight:900;
-  list-style:none;
-}
-.rr-details > summary::-webkit-details-marker{ display:none; }
-.rr-details__body{ margin-top:10px; opacity:.92; }
-.rr-details--wide{ padding:14px; }
 
-.rr-safe-path__title{ font-weight:900; }
-
-.rr-cta{
-  margin-top: 18px;
-  display:flex;
-  gap:14px;
-  justify-content:space-between;
-  align-items:center;
-  border:1px solid rgba(0,0,0,.08);
-  background:#fff;
-  border-radius:18px;
-  padding:14px;
-  flex-wrap:wrap;
+.investment-hero h1,
+.section-heading h2 {
+  margin: 0 0 1rem;
 }
-.rr-cta__title{ font-weight:900; margin-bottom:4px; }
-.rr-cta__actions{ display:flex; gap:10px; flex-wrap:wrap; }
+
+.investment-hero h1 {
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.08;
+}
+
+.lead {
+  max-width: 680px;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  opacity: 0.96;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.proposal-card {
+  display: flex;
+  align-items: stretch;
+}
+
+.proposal-card-inner {
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.proposal-card h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.mini-label {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.investment-section {
+  padding: 4.5rem 1.25rem;
+  background: #fff;
+}
+
+.investment-section-alt {
+  background: #f6f9fc;
+}
+
+.funding-band {
+  background: linear-gradient(180deg, #f7fafc 0%, #eef5fb 100%);
+}
+
+.investment-cta-band {
+  background: #0b3a6e;
+  color: #fff;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto 2.2rem;
+  text-align: center;
+}
+
+.section-heading .eyebrow {
+  background: rgba(11, 58, 110, 0.08);
+  color: #0b3a6e;
+}
+
+.investment-grid,
+.opportunity-grid,
+.funding-grid,
+.packages-grid,
+.revenue-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.investment-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.opportunity-grid,
+.funding-grid,
+.revenue-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.packages-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.investment-card,
+.opportunity-box,
+.funding-card,
+.package-card,
+.revenue-item {
+  background: #fff;
+  border: 1px solid rgba(11, 58, 110, 0.08);
+  border-radius: 22px;
+  padding: 1.5rem;
+  box-shadow: 0 14px 34px rgba(11, 58, 110, 0.06);
+}
+
+.investment-card h3,
+.opportunity-box h3,
+.funding-card h3,
+.package-card h3,
+.revenue-item h3 {
+  margin-top: 0;
+  color: #0b3a6e;
+}
+
+.investment-card ul,
+.package-card ul {
+  padding-left: 1.1rem;
+  margin-bottom: 0;
+}
+
+.package-card {
+  position: relative;
+}
+
+.package-card.featured {
+  border: 2px solid #2e7d32;
+  transform: translateY(-4px);
+}
+
+.package-label {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: #eef4f8;
+  color: #0b3a6e;
+  font-weight: 700;
+}
+
+.revenue-number {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #2e7d32;
+}
+
+.investment-cta-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.cta-details {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 22px;
+  padding: 1.5rem;
+}
+
+.cta-details p {
+  margin: 0 0 0.8rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #0b3a6e;
+}
+
+@media (max-width: 980px) {
+  .investment-hero-grid,
+  .investment-cta-inner,
+  .investment-grid,
+  .opportunity-grid,
+  .funding-grid,
+  .packages-grid,
+  .revenue-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .package-card.featured {
+    transform: none;
+  }
+}
+
+.package-btn {
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.package-card ul {
+  margin-top: 1rem;
+}
+
+.package-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Bronze */
+.package-card.bronze {
+  border: 2px solid #e0a96d;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Silver */
+.package-card.featured {
+  border: 2px solid #d1d5db;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Gold */
+.package-card.gold {
+  border: 2px solid #f5d36b;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.btn-primary {
+  background: #0b3a6e;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #082b51;
+}
+
+
+/*MOBILE VIEW PARTNERSHIPS CSS*/
+
+/* MOBILE RESPONSIVE FIXES */
+@media (max-width: 768px) {
+
+  /* General spacing */
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* NAVIGATION */
+  .nav-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .site-nav a {
+    font-size: 0.9rem;
+  }
+
+  /* HERO SECTION */
+  .investment-hero {
+    padding: 3rem 1rem;
+  }
+
+  .investment-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .investment-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .lead {
+    font-size: 0.95rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  /* CARDS / SECTIONS */
+  .investment-grid,
+  .opportunity-grid,
+  .funding-grid,
+  .packages-grid,
+  .revenue-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* PACKAGE CARDS */
+  .package-card {
+    padding: 1.25rem;
+  }
+
+  .package-card:hover {
+    transform: none; /* disable hover jump on mobile */
+  }
+
+  .package-card.featured,
+  .package-card.gold,
+  .package-card.bronze {
+    transform: none; /* prevent scaling breaking layout */
+  }
+
+  /* BUTTONS */
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .package-btn {
+    width: 100%;
+  }
+
+  /* CTA SECTION */
+  .investment-cta-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-details {
+    margin-top: 1rem;
+  }
+
+  /* FOOTER */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+}
